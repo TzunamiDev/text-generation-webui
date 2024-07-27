@@ -13,10 +13,10 @@ import sys
 # os.environ["ROCM_PATH"] = '/opt/rocm'
 # os.environ["HSA_OVERRIDE_GFX_VERSION"] = '10.3.0'
 # os.environ["HCC_AMDGPU_TARGET"] = 'gfx1030'
-GPU_CHOICE="A"
-USE_CUDA118=False
-LAUNCH_AFTER_INSTALL=False
-INSTALL_EXTENSIONS=False
+os.environ["GPU_CHOICE"] = 'A'
+os.environ["USE_CUDA118"] = 'FALSE'
+os.environ["LAUNCH_AFTER_INSTALL"] = 'FALSE'
+os.environ["INSTALL_EXTENSIONS"] = 'FALSE'
 
 # Define the required PyTorch version
 TORCH_VERSION = "2.2.2"
